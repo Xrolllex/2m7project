@@ -6,16 +6,23 @@
 
 .topbar {
   width: 100%;
-  background-color: #f8f8f8;
+  background-color: #241711;
   display: flex;
-  justify-content: baseline;
-  
+  justify-content: space-between;
+  color: white;
   border-bottom: 1px solid #ddd;
   gap: 20px;
-  
-  
 
 }
+
+.contact {
+  display: flex;
+}
+
+.social {
+  display: flex;
+}
+
 
 .nav {
   width: 100%;

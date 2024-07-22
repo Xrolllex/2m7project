@@ -1,5 +1,6 @@
 import React from "react";
 import scss from "../Why/icons.module.scss"
+import home from "../../svg/symbol-defs.svg#icon-home"
 
 
 const Icons = () => {
@@ -7,7 +8,9 @@ const Icons = () => {
         <div className={scss.wrapper}>
             <div className={scss.list}>
             <li>
-                <img src="" alt="" />
+                <svg className={scss.icon}>
+                    <use href={home} />
+                </svg>
                 <p>Nie masz czasu?</p>
             </li>
             <li>

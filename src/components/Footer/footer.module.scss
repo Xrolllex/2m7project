@@ -1,6 +1,23 @@
 .footer{
-    flex-grow: 0;
+  flex-grow: 0;
   flex-shrink: 0;
   background-color: #241711;
   color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+ 
+  width: 100%;
+  margin: auto;
+}
+
+.logo_section, .contact, .testimonials, .ig {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
 }

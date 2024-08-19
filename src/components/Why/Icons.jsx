@@ -1,6 +1,6 @@
 import React from "react";
 import scss from "../Why/icons.module.scss"
-import home from "../../svg/symbol-defs.svg#icon-home"
+import icons from "../../svg/symbol-defs.svg#icon-home"
 
 
 const Icons = () => {
@@ -8,29 +8,39 @@ const Icons = () => {
         <div className={scss.wrapper}>
             <div className={scss.list}>
             <li>
-                <svg className={scss.icon}>
-                    <use href={home} />
-                </svg>
+            <svg className={scss.icon}>
+            <use xlinkHref={`${icons}#icon-stopwatch`} />
+          </svg>
                 <p>Nie masz czasu?</p>
             </li>
             <li>
-                <img src="" alt="" />
+            <svg className={scss.icon}>
+            <use xlinkHref={`${icons}#icon-coin-dollar`} />
+          </svg>
                 <p>Chcesz dobrze wydać pieniądze?</p>
             </li>
             <li>
-                <img src="" alt="" />
+            <svg className={scss.icon}>
+            <use xlinkHref={`${icons}#icon-play3`} />
+          </svg>
                 <p>Nie wiesz od czego zacząć?</p>
             </li>
             <li>
-                <img src="" alt="" />
+            <svg className={scss.icon}>
+            <use xlinkHref={`${icons}#icon-spinner3`} />
+          </svg>
                 <p>Widziałeś wiele zdjęć, pomysłów, stylów, masz w głowie chaos?</p>
             </li>
             <li>
-                <img src="" alt="" />
+            <svg className={scss.icon}>
+            <use xlinkHref={`${icons}#icon-home`} />
+          </svg>
                 <p>Chciałbyś pracować w domu, ale mieszkanie nie jest funkcjonalne i trzeba to zmienić?</p>
             </li>
             <li>
-                <img src="" alt="" />
+            <svg className={scss.icon}>
+            <use xlinkHref={`${icons}#icon-magic-wand`} />
+          </svg>
                 <p>Postanowiłeś zmienić wystrój domu, kupiłeś nowe mieszkanie?</p>
             </li>
             </div>

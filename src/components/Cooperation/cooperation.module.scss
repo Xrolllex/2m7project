@@ -3,7 +3,6 @@
     background-color: #241711;
     color: white;
     padding: 30px;
-   
 }
 
 .content {
@@ -14,7 +13,7 @@
     text-align: center;
 }
 
-.dsc{ 
+.dsc { 
     text-align: center;
     width: 60%;
     margin-left: 300px;
@@ -27,4 +26,9 @@
     border-radius: 20px;
     border: none;
     background-color: #dbb12c;
+}
+
+.image img {
+    max-width: 100%; /* Zapewnia, że obraz nie wyjdzie poza kontener */
+    height: auto;
 }

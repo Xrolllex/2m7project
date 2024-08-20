@@ -1,27 +1,19 @@
 .wrapper {
-  text-align: left;
   padding: 30px;
+  text-align: left;
 }
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-}
-
-.btn {
-  padding: 20px;
-  border-radius: 20px;
-  border: none;
-  background-color: #dbb12c;
+  gap: 20px; /* Zmniejsza odstęp między obrazem a formularzem */
 }
 
 .formWrapper {
-  text-align: center;
   font-size: 20px;
   font-weight: 400;
+  width: 50%; /* Formularz zajmuje połowę szerokości kontenera */
 }
 
 .input_container {
@@ -34,9 +26,17 @@
 
   input,
   textarea {
-    width: 300px;
+    width: 100%; /* Elementy formularza zajmują całą szerokość dostępnego miejsca */
     padding: 8px;
     box-sizing: border-box;
     resize: none;
   }
+}
+
+.btn {
+  padding: 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #dbb12c;
+  cursor: pointer;
 }

@@ -7,23 +7,39 @@
 
 .topbar {
   width: 100%;
-  background-color: #241711;
+  background: rgb(36,23,17);
+background: radial-gradient(circle, rgba(36,23,17,1) 70%, rgba(60,45,38,1) 100%);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center; 
   color: white;
- 
+  height: 60px;
 }
 
-.contact {
-  display: flex;
-  margin-left: 150px;
-  gap: 30px;
-  margin-top: 12px;
+.icon {
+  width: 25px;
+  fill: white;
+
+    &:hover{
+    fill:#dbb12c;
+    cursor: pointer;
+    
+  }
 }
 
-.social {
-  display: flex;
-}
+      .contact {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+      }
+
+      .socials {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+
+       
+      }
 
 
 .nav {
@@ -31,7 +47,8 @@
   display: flex;
   justify-content: space-around;
   padding: 20px 0;
-  
+  font-size: 20px;
+  font-weight: 600;
 
   .menu{
     margin-top: 25px;
@@ -50,7 +67,7 @@
       cursor: pointer;
       
       &:hover {
-        color: #dfdb09;
+        color: #dbb12c;
       }
     }
   }

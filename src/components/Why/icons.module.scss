@@ -1,7 +1,10 @@
 .wrapper {
     text-align: center;
-    background-color: #241711;
+    background: rgb(36,23,17);
+background: radial-gradient(circle, rgba(36,23,17,1) 70%, rgba(60,45,38,1) 100%);
     padding: 30px;
+    font-size: 18px;
+    font-weight: 400;
   }
   
   .list {
@@ -13,6 +16,8 @@
     width: 80%;
     text-align: center;
     margin: auto;
+    font-weight: 500;
+    
   }
   
   .list li {
@@ -26,6 +31,13 @@
     margin-top: 20px;
     color: white;
     width: 80%;
+    margin: auto;
+  }
+
+  .icon {
+    width:65px;
+    fill: #dbb12c;
+    padding: 0;
     margin: auto;
   }
 

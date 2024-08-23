@@ -11,6 +11,7 @@ import Form from './components/Form/form.jsx';
 
 import "normalize.css";
 
+
 function App() {
   useEffect(() => {
     const script = document.createElement("script");

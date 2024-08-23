@@ -1,6 +1,7 @@
 .wrapper {
     text-align: left;
-    background-color: #241711;
+    
+    background: radial-gradient(circle, rgba(36,23,17,1) 70%, rgba(60,45,38,1) 100%);
     color: white;
     padding: 30px;
 }
@@ -29,6 +30,6 @@
 }
 
 .image img {
-    max-width: 100%; /* Zapewnia, że obraz nie wyjdzie poza kontener */
+    max-width: 100%;
     height: auto;
 }

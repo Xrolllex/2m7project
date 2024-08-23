@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import scss from "../Projects/project.module.scss"
 
 function Projects() {
     const [projects, setProjects] = useState([]);
@@ -14,12 +15,12 @@ function Projects() {
     }, []); 
 
     return (
-        <div className="project-grid">
+        <div className={scss.project_grid}>
             {projects.map(project => (
-                <div key={project._id} className="project-item">
+                <div key={project._id} className={scss.project_item}>
                     <img src={project.imagePath} alt={project.name} />
                     <h3>{project.name}</h3>
-                    <p>{project.description}</p>
+                    <p className={scss.description}>{project.description}</p>
                 </div>
             ))}
         </div>

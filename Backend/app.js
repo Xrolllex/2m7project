@@ -8,7 +8,7 @@ const app = express();
 const port = 3001;
 
 app.use(cors());
-app.use(express.json()); // Ważne, aby obsługiwać JSON
+app.use(express.json()); 
 
 mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
@@ -24,7 +24,7 @@ app.get('/api/projects', async (req, res) => {
       const projects = await Project.find();
       res.json(projects);
   } catch (error) {
-      console.error(error); // Dodaj to, aby zobaczyć więcej szczegółów błędu w terminalu
+      console.error(error); 
       res.status(500).send(error);
   }
 });
@@ -34,7 +34,7 @@ app.get('/api/projects/:id', async (req, res) => {
       const project = await Project.findById(req.params.id);
       res.json(project);
   } catch (error) {
-      console.error(error); // Dodaj to, aby zobaczyć więcej szczegółów błędu w terminalu
+      console.error(error); 
       res.status(500).send(error);
   }
 });

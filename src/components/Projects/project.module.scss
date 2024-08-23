@@ -1,22 +1,31 @@
-.project-grid {
+.project_grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
 }
 
-.project-item {
-    border: 1px solid #ddd;
+.project_item {
+    border: 3px solid #ddd;
+    border-radius: 25px;
     padding: 10px;
     background-color: #fff;
     text-align: center;
 
     img {
-        max-width: 100%;
-        height: auto;
+        width: 150px; 
+        height: 150px; 
+        object-fit: cover; 
     }
 
     h3 {
         margin-top: 10px;
     }
 }
+
+.description {
+    display: none;
+}
+
+
+

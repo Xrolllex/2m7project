@@ -1,0 +1,23 @@
+.wrapper {
+  text-align: center;
+  background: rgb(36, 23, 17);
+  background: radial-gradient(circle, rgba(36, 23, 17, 1) 70%, rgba(60, 45, 38, 1) 100%);
+  padding: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  margin: 0 auto; 
+  margin-top: -50px; 
+  position: relative; 
+}
+
+.forwhat {
+  margin-top: 20px;
+  color: white;
+  width: 80%;
+  margin: auto;
+}

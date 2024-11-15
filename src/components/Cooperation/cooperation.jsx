@@ -1,31 +1,45 @@
-import React from "react";
+import React, {useState} from "react";
 import scss from "../Cooperation/cooperation.module.scss";
-import woman from "../../images/marissa-grootes-ROlz8qgP2ms-unsplash-scaled.jpg";
+import woman from "../../images/1231.png";
 
 const Cooperation = () => {
+    const [selectedStep, setSelectedStep] = useState(1); // Domyślnie pierwszy krok jest wybrany
+
+    const steps = [
+        { id: 1, title: 'Kontakt', description: 'Maksymalnie angażujemy się w każdy projekt, dostarczając fachowe, merytoryczne wsparcie. Twoje potrzeby, oczekiwania oraz budżet są dla nas najważniejsze. Bazując na Twoich opowieściach, tworzymy kilka różnych koncepcji.', icon: 'path/to/icon1.png' },
+        { id: 2, title: 'Umowa', description: 'Nie musisz obawiać się, że dostaniesz tylko jedną propozycję. Gdy zaakceptujesz jedną z naszych zaprezentowanych koncepcji, przystępujemy do wizualizacji. Otrzymujesz od nas kilka wariantów, a my stale jesteśmy w kontakcie.', icon: 'path/to/icon3.png' },
+        { id: 4, title: 'Projektowanie', description: 'Cały czas masz realny wpływ na pracę projektanta wnętrz, co zwiększa szansę na stworzenie projektu idealnego. A gdy ten już powstanie, przygotujemy szczegółową listę zakupów zgodną z projektem.', icon: 'path/to/icon4.png' },
+        { id: 5, title: 'Realizacja', description: 'Potrzebujesz wsparcia przy realizacji? Skontaktujemy Cię z najlepszymi wykonawcami z Mazowsza: stolarzami, tapicerami, glazurnikami, elektrykami i innymi fachowcami. Otrzymasz od nas projekty wykonawcze dla poszczególnych ekip.', icon: 'path/to/icon5.png' },
+    ];
+
     return (
-        <div className={scss.wrapper}>
-            <div className={scss.content}>
-                <div className={scss.dsc}>
-                    <h3>Jak wygląda współpraca z projektantem wnętrz?</h3>
-                    <p>Maksymalnie angażujemy się w każdy projekt, dostarczając naszym klientom fachowe, merytoryczne wsparcie. Jednak tym, co nami kieruje i co wysuwa się na pierwszy plan są Twoje potrzeby, oczekiwania oraz budżet.
-
-                    Bazując na tym, co nam opowiesz, przechodzimy do tworzenia kilku koncepcji. Nie musisz się zatem obawiać, że dostaniesz tylko jedną propozycję. Gdy zaakceptujesz któryś z zaprezentowanych wariantów, zajmiemy się wizualizacją pomieszczeń, i tu też otrzymujesz od nas kilka wariantów. Stale jesteśmy w kontakcie, ciągle masz realny wpływ na pracę projektanta wnętrz, co zwiększa szansę na stworzenie projektu idealnego.
-
-                    A gdy ten już powstanie, przychodzi czas na zakupy
-                    – zgodne z bardzo szczegółową listą dostarczoną przez nas.
-
-                    Potrzebujesz wsparcia również na tym etapie? A może decydujesz się na meble na wymiar?
-
-                    Skontaktujemy Cię z najlepszymi wykonawcami z Mazowieckiego – stolarzami i tapicerami, aby umożliwić Ci sprawne złożenie zamówienia. Przygotujemy też projekty wykonawcze dla poszczególnych ekip, w tym glazurników, elektryków, fachowców układających podłogi oraz szklarzy.</p>
-                    <button className={scss.btn}>Dowiedz się więcej</button>
+        <div className={scss.container}>
+       
+        <div className={scss.steps}>
+            {steps.map((step) => (
+                <div 
+                    key={step.id} 
+                    className={`${scss.step} ${selectedStep === step.id ? scss.active : ''}`} 
+                    onClick={() => setSelectedStep(step.id)}
+                >
+                    <div className={scss.icon}>
+                        <img src={step.icon} alt={step.title} />
+                    </div>
+                    <h3>{step.title}</h3>
                 </div>
-                <div className={scss.image}>
-                    <img src={woman} alt="Businesswoman" width="50%" height="auto" />
-                </div>
-            </div>
+            ))}
         </div>
+    <hr />
+        {selectedStep && (
+            <div className={scss.description}>
+                <p>{steps.find(step => step.id === selectedStep).description}</p>
+            </div>
+        )}
+    
+    </div>
+    
     );
-};
+}
+
 
 export default Cooperation;

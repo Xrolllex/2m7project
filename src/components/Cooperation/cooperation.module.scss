@@ -1,35 +1,86 @@
-.wrapper {
-    text-align: left;
-    
-    background: radial-gradient(circle, rgba(36,23,17,1) 70%, rgba(60,45,38,1) 100%);
-    color: white;
-    padding: 30px;
-}
-
-.content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
+.container {
+    text-align: center;
+    padding: 40px;
+    background: rgb(36, 23, 17);
+    background: radial-gradient(circle, rgba(36, 23, 17, 1) 70%, rgba(60, 45, 38, 1) 100%);
+    color: #fff;
+    width: 80%;
+    position: relative; 
     align-items: center;
-    text-align: center;
+    border-radius: 25px;
+    margin: 0 auto; 
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #fff;
+    }
 }
 
-.dsc { 
-    text-align: center;
-    width: 60%;
-    margin-left: 300px;
-    font-size: 20px;
-    font-weight: 300;
+.steps {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+
+    .step {
+        max-width: 150px;
+        cursor: pointer;
+        transition: transform 0.3s;
+
+        &.active {
+            .icon {
+                background-color: #ffc107; 
+            }
+        }
+
+        .icon {
+            background-color: #ddd;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 10px;
+            transition: background-color 0.3s;
+
+            img {
+                width: 50%;
+                height: 50%;
+            }
+        }
+
+        h3 {
+            font-size: 16px;
+            margin: 10px 0 5px;
+            color: #fff;
+        }
+    }
 }
 
-.btn {
-    padding: 20px;
-    border-radius: 20px;
+.description {
+    margin-top: 20px;
+    font-size: 25px;
+    color: #ffffff;
+    padding: 0 20px; // Dodatkowe odstępy, aby tekst był czytelniejszy
+
+    p {
+        margin: 0;
+    }
+}
+
+.button {
+    background-color: #ffc107;
+    color: #000;
+    padding: 10px 20px;
     border: none;
-    background-color: #dbb12c;
-}
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
 
-.image img {
-    max-width: 100%;
-    height: auto;
+    &:hover {
+        background-color: #e0a800;
+    }
 }

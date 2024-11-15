@@ -5,7 +5,7 @@ import Footer from './components/Footer/footer.jsx';
 import Header from './components/Header/header.jsx';
 import Slider from './components/Slider/slider.jsx';
 import Projects from './components/Projects/projects.jsx';
-import Icons from './components/Why/Icons.jsx';
+import Enter from './components/Why/enter.jsx';
 import Cooperation from './components/Cooperation/cooperation.jsx';
 import Form from './components/Form/form.jsx';
 
@@ -28,7 +28,7 @@ function App() {
     <div className="App">
       <Header />
       <Slider />
-      <Icons />
+      <Enter />
       <Projects />
       <Cooperation />
       <div className="elfsight-widget">

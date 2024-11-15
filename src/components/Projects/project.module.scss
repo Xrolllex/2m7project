@@ -1,15 +1,15 @@
 .project_grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     padding: 20px;
     margin: 25px 0;
 }
 
-h2 {
+.title {
     display: block;
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .project_item {
@@ -19,8 +19,8 @@ h2 {
     text-align: center;
 
     img {
-        width: 300px;
-        height: 300px;
+        width: 800px;
+        height: 400px;
         object-fit: cover;
         transition: all 0.3s ease; 
         border-radius: 30px;
@@ -45,4 +45,20 @@ h2 {
     &:hover h3 {
         opacity: 1;
     }
+}
+
+
+.btn {
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    background-color: #dbb12c;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: flex;
+    text-align: center;
+        margin: auto;
+    margin-bottom: 50px;
+    font-weight: 500;
 }

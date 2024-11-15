@@ -30,20 +30,24 @@ function Projects() {
 
     return (
         <div>
-            <h2>Moje projekty</h2>
+           <h2 className={scss.title}>Nasze realizacje</h2>
             <div className={scss.project_grid}>
-                {projects.map((project, index) => (
+                {projects.slice(0, 6).map((project, index) => (
                     <div key={project._id} className={scss.project_item}>
                         <img 
                             src={project.imagePath} 
                             alt={project.name} 
-                            onClick={() => openLightbox(index)} // Otwórz lightbox po kliknięciu w obraz
+                            onClick={() => openLightbox(index)}
                         />
                         <h3>{project.name}</h3>
                     </div>
                 ))}
             </div>
-
+            <div>
+                <button className={scss.btn}>
+                    Zobacz więcej
+                </button>
+            </div>
             {isOpen && (
                 <Lightbox
                     open={isOpen}

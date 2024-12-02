@@ -1,14 +1,21 @@
-.footer {
-  flex-grow: 0;
-  flex-shrink: 0;
-  background-color: #241711;
+.footerWrapper{
+  background: rgb(36,23,17);
+  background: radial-gradient(circle, rgba(36,23,17,1) 70%, rgba(60,45,38,1) 100%);
   color: white;
   display: grid;
+  width: 100%;
+  padding: 15px 0px;
+}
+
+.footer {
+  width: 80%;
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
   gap: 10px;
   padding: 15px 0; 
-  width: 100%;
-  margin: auto;
 }
 
 .logo_section {
@@ -19,7 +26,6 @@
 }
 
 .social {
- 
   display: flex;
   gap: 15px;
 }
@@ -38,4 +44,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.menu {
+  font-size: 17px;
+  
+  padding-bottom: 15px;
+  a {
+    text-decoration: none;
+    color: white;
+
+  &:hover {
+    color: #dbb12c;
+
+
+    }
+  }
+}
+
+.under {
+  padding: 15px 0px;
+  text-transform: uppercase;
+  color: #dbb12c;
+  font-weight: 500;
 }

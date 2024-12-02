@@ -9,7 +9,7 @@ const Footer = () => {
             <div className={scss.footer}>
                 <div className={scss.sections}>
                     <div className={scss.logo_section}>
-                        <img src={logo} alt="logo" width="150px" height="auto" />
+                        <img src={logo} alt="logo" width="250px" height="auto" />
                         <div className={scss.social}>
                         <li>
                                 <svg className={scss.icon} aria-hidden="true">
@@ -27,9 +27,18 @@ const Footer = () => {
 
                 <div className={scss.sections}>
                     <div className={scss.contact}>
-                        <p>Kontakt</p>
-                        <li>Email</li>
-                        <li>Telefon</li>
+                        <h3>Menu</h3>
+                        <div className={scss.menu}>
+                        <li><a href="#">O nas</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Oferta</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                        </div> 
+                        <hr />
+                        <div className={scss.under}>
+                        <li><a>biuro@2m7Project.com</a></li>
+                        <li><a>156165645</a></li>
+                        </div>
                     </div>
                 </div>
 

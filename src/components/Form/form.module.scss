@@ -34,9 +34,14 @@
 }
 
 .btn {
-  padding: 20px;
+  padding: 10px 20px;
   border-radius: 20px;
   border: none;
   background-color: #dbb12c;
   cursor: pointer;
+  font-size: large;
+}
+
+.stairs {
+  border-radius: 15px;
 }

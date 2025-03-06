@@ -1,0 +1,107 @@
+$primary-bg: #f4ede6;
+$primary-text: black;
+$secondary-text: #4a4a4a;
+$button-bg: rgb(152 59 69);
+$button-hover: #db2777;
+
+.container {
+  position: relative; // Umożliwia pozycjonowanie elementów w tle
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px;
+ 
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.imageWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+}
+
+.imageContainer {
+  width: 80%;
+  background-color: white;
+  padding: 10px;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+
+
+}
+
+.textContent {
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem;
+  @media (min-width: 768px) {
+    width: 80%;
+    text-align: left;
+  }
+}
+
+.heading {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: $primary-text;
+  margin-bottom: 1rem;
+}
+
+.paragraph {
+  color: $secondary-text;
+  margin-bottom: 1.5rem;
+  font-size: 20px;
+  color: black;
+}
+
+.button {
+  padding: 15px 60px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: rgb(82 32 3);
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  font-size: 16px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  &:hover {
+    background-color: $button-hover;
+  }
+}
+
+.backgroundDecoration {
+  position: absolute;
+  top: 8%;
+  left: 15%;
+  transform: translateX(-50%);
+  z-index: 0; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slash {
+  font-size: 450px;
+  color: rgba(82, 32, 3, 0.15); // Ustawienie półprzezroczystości
+  font-weight: lighter;
+}
+
+.underline {
+  width: 900px;
+  height: 6px;
+  background-color: rgba(82, 32, 3, 0.15);
+  margin-top: -360px;
+  margin-left: 600px;
+}

@@ -1,11 +1,11 @@
 .wrapper {
   text-align: center;
-  background: rgb(255, 255, 255);
+  background: rgb(243, 243, 243);
   
   padding: 30px;
   font-size: 18px;
   font-weight: 400;
-  width: 85%;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,4 +20,19 @@
   color: rgb(0, 0, 0);
   width: 80%;
   margin: auto;
+}
+
+
+.slash {
+  font-size: 15px;
+  color: rgb(82, 32, 3);
+  font-weight:bold;
+}
+
+.underline {
+  width: 3%;
+  height: 0.5px;
+  background-color: rgba(82, 32, 3, 0.747);
+  margin-left: 670px;
+  margin-top: -8px;
 }

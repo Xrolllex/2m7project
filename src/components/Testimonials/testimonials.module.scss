@@ -1,0 +1,116 @@
+$backgroundColor: #edf1f5; // Kolor tła z drugiego zdjęcia
+$buttonColor: #983b45;
+$buttonHover: #7a2d36;
+$cardBackground: white;
+$textColor: #000;
+$secondaryTextColor: #555;
+
+.testimonialSection {
+  
+  padding: 50px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.scrollContainer {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  text-wrap: wra;
+}
+
+.testimonialGrid {
+  display: flex;
+  gap: 40px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonialItem {
+display: block;
+  width: 550px;
+  background: $cardBackground;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  color: $textColor;
+}
+
+.testimonialAuthor {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.testimonialAuthor img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.testimonialAuthor div {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonialAuthor strong {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.testimonialAuthor span {
+  font-size: 14px;
+  color: $secondaryTextColor;
+}
+
+.btn {
+  padding: 15px 30px;
+  border-radius: 8px;
+  background-color: $buttonColor;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 30px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: $buttonHover;
+}
+
+// Nawigacja dla slidera
+.sliderButtons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.sliderButton {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  pointer-events: all;
+  transition: background 0.3s;
+}
+
+.sliderButton:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}

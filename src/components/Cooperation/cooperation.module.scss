@@ -1,8 +1,8 @@
 .container {
     text-align: center;
     padding: 40px 0;
-    background: rgba(201,184,160,1);
-    color: #fff;
+    background: rgb(247,245,242);
+    color: #000000;
     width: 100%;
     position: relative; 
     align-items: center;
@@ -11,7 +11,7 @@
     h2 {
         margin-bottom: 20px;
         font-size: 24px;
-        color: #fff;
+        color: #000000;
     }
 }
 
@@ -28,7 +28,7 @@
 
         &.active {
             .icon {
-                background-color: #ffc107; 
+                background-color: rgb(152 59 69);
             }
         }
 
@@ -52,7 +52,7 @@
         h3 {
             font-size: 16px;
             margin: 10px 0 5px;
-            color: #fff;
+            color: #000000;
         }
     }
 
@@ -62,7 +62,7 @@
 .description {
     margin-top: 20px;
     font-size: 25px;
-    color: #ffffff;
+    color: #000000;
     text-align: center;
     display: flex;
     flex-wrap: wrap;

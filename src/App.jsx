@@ -8,6 +8,8 @@ import Projects from './components/Projects/projects.jsx';
 import Enter from './components/Why/enter.jsx';
 import Cooperation from './components/Cooperation/cooperation.jsx';
 import Form from './components/Form/form.jsx';
+import About from './components/About/about.jsx';
+import ScrollableTestimonials from './components/Testimonials/testimonials.jsx';
 
 import "normalize.css";
 
@@ -30,10 +32,12 @@ function App() {
       <Slider />
       <Enter />
       <Projects />
+      <About />
       <Cooperation />
-      <div className="elfsight-widget">
+      <ScrollableTestimonials />
+      {/* <div className="elfsight-widget">
         <div className="elfsight-app-248d6ac2-2d2f-41b4-8426-888d301a7133" data-elfsight-app-lazy></div>
-      </div>
+      </div> */}
       <Form />
       <Footer />
     </div>

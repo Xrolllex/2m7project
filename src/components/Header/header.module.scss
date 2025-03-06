@@ -5,16 +5,16 @@
   
 }
 
-.topbar {
-  width: 100%;
-  background: rgb(36,23,17);
-background: radial-gradient(circle, rgba(36,23,17,1) 70%, rgba(60,45,38,1) 100%);
-  display: flex;
-  justify-content: space-around;
-  align-items: center; 
-  color: white;
-  height: 60px;
-}
+// .topbar {
+//   width: 100%;
+//   background: rgb(190, 105, 105);
+// background: radial-gradient(circle, rgb(190, 105, 105) 70%, rgb(190, 105, 105) 100%);
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center; 
+//   color: white;
+//   height: 60px;
+// }
 
 .icon {
   width: 25px;
@@ -43,7 +43,7 @@ background: radial-gradient(circle, rgba(36,23,17,1) 70%, rgba(60,45,38,1) 100%)
 
 
 .nav {
-  background-color: #fff;
+  background-color: rgb(247, 245, 242);
   display: flex;
   justify-content: space-around;
   padding: 20px 0;

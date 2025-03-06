@@ -1,13 +1,11 @@
 .container {
     text-align: center;
-    padding: 40px;
-    background: rgb(36, 23, 17);
-    background: radial-gradient(circle, rgba(36, 23, 17, 1) 70%, rgba(60, 45, 38, 1) 100%);
+    padding: 40px 0;
+    background: rgba(201,184,160,1);
     color: #fff;
-    width: 80%;
+    width: 100%;
     position: relative; 
     align-items: center;
-    border-radius: 25px;
     margin: 0 auto; 
 
     h2 {
@@ -21,7 +19,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 20px 0;
+    margin: 20px 250px;
 
     .step {
         max-width: 150px;
@@ -58,22 +56,26 @@
         }
     }
 
-    hr {
-
-        
-    }
+    
 }
 
 .description {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 25px;
     color: #ffffff;
-    padding: 0 20px; 
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    
 
     p {
         margin: 0;
+        width: 70%; 
     }
 }
+
 
 .button {
     background-color: #ffc107;

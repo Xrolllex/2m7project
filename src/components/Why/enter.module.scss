@@ -1,11 +1,11 @@
 .wrapper {
   text-align: center;
-  background: rgb(36, 23, 17);
-  background: radial-gradient(circle, rgba(36, 23, 17, 1) 70%, rgba(60, 45, 38, 1) 100%);
+  background: rgb(255, 255, 255);
+  
   padding: 30px;
   font-size: 18px;
   font-weight: 400;
-  width: 75%;
+  width: 85%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@
 
 .forwhat {
   margin-top: 20px;
-  color: white;
+  color: rgb(0, 0, 0);
   width: 80%;
   margin: auto;
 }

@@ -6,25 +6,7 @@ import icons from "../../svg/symbol-defs.svg"
 const Header = () => {
   return (
     <header>
-      <div className={scss.topbar}>
-        <div className={scss.contact}>
-        <p>Napisz do nas</p>
-        <p>Zadzwoń do nas</p>
-        </div>
-        <div className={scss.socials}>
-        <li>
-              <svg className={scss.icon} aria-hidden="true">
-             <use xlinkHref={`${icons}#icon-facebook2`} />
-             </svg>
-              </li>
-               <li>
-                <svg className={scss.icon} aria-hidden="true">
-                 <use xlinkHref={`${icons}#icon-instagram`} />
-                  </svg>
-               </li>
-        </div>
-      </div>
-      <nav className={scss.nav}>
+     <nav className={scss.nav}>
         <img src={logo} alt="logo" className={scss.logo} />
         <ul className={scss.menu}>
           <li>O nas</li>

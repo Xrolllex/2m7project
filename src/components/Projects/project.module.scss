@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 20px;
+    padding: 30px 250px;
     margin: 25px 0;
 }
 
@@ -15,15 +15,15 @@
 .project_item {
     position: relative; 
     overflow: hidden; 
-    border-radius: 23px;
+    border-radius: 0px;
     text-align: center;
 
     img {
-        width: 800px;
-        height: 400px;
+        width: 400px;
+        height: 200px;
         object-fit: cover;
         transition: all 0.3s ease; 
-        border-radius: 30px;
+        border-radius: 0px;
     }
 
     h3 {
@@ -51,8 +51,8 @@
 .btn {
     padding: 20px 40px;
     border-radius: 10px;
-    color: rgb(0, 0, 0);
-    background-color: #dbb12c;
+    color: rgb(255, 255, 255);
+    background-color: rgb(152 59 69);
     border: none;
     cursor: pointer;
     text-transform: uppercase;

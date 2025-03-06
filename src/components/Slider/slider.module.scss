@@ -1,23 +1,137 @@
-.slider {
-    display: block;
+$primary-color: rgb(152 59 69);
+$secondary-color: rgb(152 59 69);
+$text-color: #1f2937;
+$gray-light: rgb(201, 184, 160);
+
+.wrapper {
+    background: rgb(247,245,242);
+    background: linear-gradient(180deg, rgba(247,245,242,1) 3%, rgba(201,184,160,1) 100%);
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
     text-align: center;
-    margin: auto;
-    background-image: url(../../images/phil-5i0GnoTTjSE-unsplash2-1.jpg);
-    padding: 15% 0 15% 0;
-    background-position: center;
-
+  }
 }
 
-.dsc {
-    font-size: 20px;
+.textContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.btn {
-    padding: 15px;
-    border-radius: 10px;
-    color: rgb(0, 0, 0);
-    background-color: #dbb12c;
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase;
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: $text-color;
+
+  .highlight {
+    color: $secondary-color;
+  }
+}
+
+.description {
+  font-size: 25px;
+  color: darken($text-color, 20%);
+  margin-top: 1rem;
+}
+
+.buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.buttonPrimary {
+  background-color: $primary-color;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+.buttonSecondary {
+  border: 2px solid $primary-color;
+  color: $primary-color;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $primary-color;
+    color: white;
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circleDecoration {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 5rem;
+  height: 5rem;
+  background-color: $secondary-color;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.image {
+  overflow: hidden;
+  border-radius: 2.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+  img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
 }

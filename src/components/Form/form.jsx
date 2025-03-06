@@ -1,14 +1,13 @@
 import React from "react";
 import scss from "./form.module.scss";
-import stairs from "../../images/norman-brown-FVaimgno3dw-unsplash-scaled.jpg";
-
-
+import leftImage from "../../images/alex-wong-l5Tzv1alcps-unsplash 1.jpg";
+import rightImage from "../../images/alex-wong-l5Tzv1alcps-unsplash 2.jpg";
 
 const Form = () => {
   return (
     <div className={scss.wrapper}>
       <div className={scss.container}>
-        <img className={scss.stairs} src={stairs} alt="stairs" width="25%" height="auto" />
+        <img className={scss.sideImage} src={leftImage} alt="left" />
         <div className={scss.formWrapper}>
           <h3>Skontaktuj się z nami i stwórz swoje wymarzone wnętrze</h3>
           <form>
@@ -26,13 +25,14 @@ const Form = () => {
             </div>
             <div className={scss.input_container}>
               <label htmlFor="message">Twoja wiadomość</label>
-              <textarea id="message" required="true"></textarea>
+              <textarea id="message" required></textarea>
             </div>
             <div className={scss.input_container}>
               <button className={scss.btn} type="submit">Wyślij</button>
             </div>
           </form>
         </div>
+        <img className={scss.sideImage} src={rightImage} alt="right" />
       </div>
     </div>
   );

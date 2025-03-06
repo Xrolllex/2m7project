@@ -1,8 +1,3 @@
-.wrapper {
-  padding: 30px;
-  text-align: left;
-}
-
 .container {
   display: flex;
   justify-content: center;
@@ -13,7 +8,11 @@
 .formWrapper {
   font-size: 20px;
   font-weight: 400;
-  width: 35%; 
+  width: 55%; 
+  padding: 50px;
+  border-radius: 35px 0 35px 0;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .input_container {
@@ -42,6 +41,8 @@
   font-size: large;
 }
 
-.stairs {
-  border-radius: 15px;
+.sideImage {
+  width: 25%;
+  height: auto;
+  
 }
